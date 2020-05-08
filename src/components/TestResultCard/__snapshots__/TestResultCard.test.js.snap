@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestResultCard should match the snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderRadius": 5,
+      "elevation": 5,
+      "margin": 10,
+      "maxWidth": "100%",
+      "minHeight": 90,
+      "padding": 20,
+      "shadowColor": "black",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+      "shadowRadius": 5,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 20,
+      }
+    }
+  >
+    Biomarker: 
+    biomarker
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+      }
+    }
+  >
+    Percentage: 
+    0.25
+    %
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "borderColor": "red",
+          "borderWidth": 1,
+        },
+        Object {
+          "padding": 10,
+          "transform": Array [
+            Object {
+              "scaleX": 0.7,
+            },
+            Object {
+              "scaleY": 5,
+            },
+          ],
+        },
+      ]
+    }
+  />
+</View>
+`;
