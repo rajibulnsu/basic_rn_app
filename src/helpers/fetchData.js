@@ -1,8 +1,15 @@
-import { HOST_URL } from '../common/constants';
+import { HOST_URL, USE_LOCAL_DATA } from '../common/constants';
+import jsonData from '../data/data.json';
 
 const data = async () => {
-  const response = await fetch(HOST_URL);
-  const responseData = await response.json();
+  let responseData;
+  if (USE_LOCAL_DATA){
+    responseData = jsonData.data;
+  } else {
+    const response = await fetch(HOST_URL);
+    responseData = await response.json();
+  }
+  console.log(responseData);
   return responseData;
 };
 
